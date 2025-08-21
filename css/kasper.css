@@ -181,6 +181,15 @@ header nav .form i {
     max-width: 500px;
 }
 
+@media (max-width: 767px) {
+    .landing .text {
+        width: 100%;
+    }
+    .landing .text .content {
+        max-width: 100%;
+    }
+}
+
 .landing .text .content h2 {
     font-size: 30px;
     font-weight: normal;
@@ -193,4 +202,47 @@ header nav .form i {
     line-height: 2;
 }
 
+.landing .change-background {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #DDD;
+}
+
+@media (max-width: 767px) {
+    .landing .change-background {
+        display: none;
+    }
+}
+
+.landing .fa-angle-left {
+    left: 30px;
+}
+
+.landing .fa-angle-right {
+    right: 30px;
+}
+
+.landing .bullets {
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-right: 10px; */
+}
+
+.landing .bullets li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.landing .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
 /* End landing */
